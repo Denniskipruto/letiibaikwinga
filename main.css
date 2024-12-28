@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffe6f0, #ffccdd);
+  color: #444;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #ff69b4;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 3px #ffa6c9;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px #ffa6c9;
+}
+
+p {
+  margin: 15px 20px;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+/* Links */
+a {
+  color: #ff6fae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff2f7e;
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ffe6f7;
+  border-bottom: 2px solid #ff69b4;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+}
+
+/* Figures and Images */
+figure {
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid #ffa6c9;
+  border-radius: 10px;
+  background: #fff5f8;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #ff1493;
+}
+
+/* Buttons */
+button, .button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover, .button:hover {
+  background: #ff2f7e;
+}
+
+/* Sections */
+section {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 240, 245, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Decorative Cats and Ice Cream */
+body:before, body:after {
+  content: '😺🍦';
+  font-size: 5rem;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+body:before {
+  top: -20px;
+  left: -20px;
+}
+
+body:after {
+  bottom: -20px;
+  right: -20px;
+}
+
+/* Footer Link */
+a[href="july11.2.html"] {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px dashed #ff69b4;
+  background: rgba(255, 105, 180, 0.1);
+  border-radius: 15px;
+}
+
+a[href="july11.2.html"]:hover {
+  background: rgba(255, 105, 180, 0.3);
+  border-color: #ff1493;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  nav ul li {
+      margin: 0 10px;
+  }
+}

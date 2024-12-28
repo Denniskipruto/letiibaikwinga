@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffe6f0, #ffccdd);
+  color: #444;
+  text-align: center;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header and Titles */
+h1, h2 {
+  color: #ff69b4;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 4px #ffa6c9;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Links */
+a {
+  color: #ff6fae;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff2f7e;
+  text-decoration: underline;
+}
+
+/* Images and Figures */
+figure {
+  margin: 20px auto;
+  padding: 10px;
+  border: 3px dashed #ff69b4;
+  border-radius: 15px;
+  background: #fff5f8;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ff1493;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  position: relative;
+  padding-left: 40px;
+  text-align: left;
+}
+
+ul li:before {
+  content: "😺";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  font-size: 1.5rem;
+}
+
+/* Decorative Cats and Ice Cream */
+body:before, body:after {
+  content: '😺🍦';
+  font-size: 8rem;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+body:before {
+  top: -20px;
+  left: -20px;
+}
+
+body:after {
+  bottom: -20px;
+  right: -20px;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 105, 180, 0.1);
+  border-top: 3px solid #ff69b4;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #ff1493;
+  font-size: 1.2rem;
+}
+
+footer a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #ff69b4;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+footer a:hover {
+  background: #ff2f7e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  figure img {
+      max-width: 90%;
+  }
+
+  ul li {
+      font-size: 1rem;
+  }
+
+  footer p, footer a {
+      font-size: 1rem;
+  }
+}
